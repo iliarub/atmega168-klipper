@@ -2,7 +2,7 @@
 
 В основном всё по этому гайду: https://nate15329.com/klipper-input-shaper-w-arduino-nano/
 Отличия:
-* Микроконтроллер `atmega328`
+* Микроконтроллер `atmega168`
 * команда прошивки ` avrdude -v -patmega168 -c arduino -P /dev/ttyUSB0 -b115200 -D -Uflash:w:out/klipper.elf.hex:i`
 
 Единственная проблема - скетч не влезает. Никак.
