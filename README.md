@@ -9,4 +9,9 @@
 Для того, что бы он поместился Можно поставить optiboot загрузчик, либо заменить в Makefile в корне klipper `-02` на `-0s`.
 Обязательно порезать Makefile в /klipper/src/. Примерный вид: https://github.com/iliarub/atmega168-klipper/blob/main/Makefile
 
+Так же необходимо исправить строку в scripts/buildcommands.py: функция `git_version` строка `ver = check_output("git describe --always --tags --long м").strip()`
+Удалить `--dirty`
+
+
+
 Проверка: `avr-size ./klipper/out/klipper.elf.hex`
